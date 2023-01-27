@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos de Bootstrap 5.3 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Icono de la página -->
+    <link rel="icon" type="img/png" href="../img/icon.png">
+
+    <title>IMC</title>
+</head>
+<body style="background-image: url(https://img.freepik.com/vector-gratis/ilustracion-vector-aislado-plano-accesorios-fitness-patrones-fisuras_98292-3904.jpg?w=740&t=st=1674776692~exp=1674777292~hmac=ebc25fc05b96d64d3fb5830095ddda0ea53e4e7c6a3f26bc12c1fd89942350eb);">
+    <main>
+        <section class="position-absolute top-50 start-50 translate-middle container bg-light bg-opacity-75 shadow-lg w-50 py-5 rounded">
+            <!-- Ingreso de información -->
+            <div class="container w-75 needs-validation px-0" id="valid">
+                <h4 class="text-center">Calcular IMC</h4>
+                
+                <!-- Estatura -->
+                <div class="container mb-2 px-0">
+                    <input type="number" class="form-control" id="height" placeholder="Estatura en metros" step="0.01" required>
+                    <div class="invalid-feedback">
+                        Ingrese la estatura en metros
+                    </div>
+                </div>
+                
+                <!-- Peso -->
+                <div class="container mb-2 px-0">
+                    <input type="number" class="form-control" id="weight" placeholder="Peso en kilogramos" required>
+                    <div class="invalid-feedback">
+                        Ingrese el peso en kilogramos
+                    </div>
+                </div>
+                
+                <button type="button" class="btn btn-success w-100 mb-2" id="button">Calcular</button>
+            </div>
+    
+            <!-- Resultado -->
+            <div type="alert" id="result"></div>
+        </section>
+    </main>
+
+    <!-- Script principal -->
+    <script src="main.js"></script>
+</body>
+</html>
