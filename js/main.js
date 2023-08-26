@@ -1,11 +1,9 @@
 function calculateImc(){
-    const valid  = document.getElementById('valid');
-    const height = document.getElementById('height');
-    const weight = document.getElementById('weight');
-    const result = document.getElementById('result');
+    result.style.display = "none";
 
-    (!height.checkValidity() || !weight.checkValidity()) ? valid.classList.add("was-validated") : valid.classList.remove("was-validated");
-    
+    if (height.checkValidity() && weight.checkValidity()) { valid.classList.remove("was-validated"); }
+    else { valid.classList.add("was-validated"); return; }
+        
     let imc = weight.valueAsNumber / Math.pow(height.valueAsNumber, 2);
     
     let output = "Resultado 👉 " + imc.toFixed(1);
@@ -49,11 +47,12 @@ function calculateImc(){
         height.value = "";
         weight.value = "";
     }
-
-    if (isNaN(imc)) {
-        result.style.display = "none";
-    }
 }
 
 const button = document.getElementById('button');
+const valid  = document.getElementById('valid');
+const height = document.getElementById('height');
+const weight = document.getElementById('weight');
+const result = document.getElementById('result');
+
 button.addEventListener("click", calculateImc, false);
