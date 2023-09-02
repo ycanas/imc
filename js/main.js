@@ -7,7 +7,7 @@ function calculateImc(){
     let imc = weight.valueAsNumber / Math.pow(height.valueAsNumber, 2);
     
     let output = "Resultado 👉 " + imc.toFixed(1);
-    let alert  = "container w-75 alert";
+    let alert  = "container alert";
 
     if (imc <= 18.5) {
         output += ", peso bajo 😟.";
