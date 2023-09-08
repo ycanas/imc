@@ -10,32 +10,32 @@ function calculateImc(){
     let alert  = "container alert";
 
     if (imc <= 18.5) {
-        output += ", peso bajo 😟.";
+        output += " → Peso bajo 😟.";
         alert  += " alert-info";
     }
 
     else if (imc <= 25) {
-        output += ", peso normal 😎.";
+        output += " → Peso normal 😎.";
         alert  += " alert-success";
     }
 
     else if (imc <= 30) {
-        output += ", sobrepeso 😦";
+        output += " → Sobrepeso 😦";
         alert  += " alert-warning";
     }
 
     else if (imc <= 35) {
-        output += ", obesidad leve 😧.";
+        output += " → Obesidad leve 😧.";
         alert  += " alert-danger";
     }
 
     else if (imc <= 40) {
-        output += ", obesidad media 😨.";
+        output += " → Obesidad media 😨.";
         alert  += " alert-danger";
     }
 
     else {
-        output += ", obesidad mórbida 😱.";
+        output += " → Obesidad mórbida 😱.";
         alert  += " alert-danger";
     }
 
