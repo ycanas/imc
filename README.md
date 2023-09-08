@@ -8,7 +8,7 @@ Esta es una pagina Web para calcular el IMC, desarrollada en JavaScript, HTML y 
 2. Validación de los datos ingresados.
 3. Clasificación del estado de salud a partir de su IMC.
 
-Enlace a la Calculadora [:arrow_right:](https://ycanas.github.io/calculadora-imc/)
+# Enlace a la Calculadora  [:arrow_right:](https://ycanas.github.io/calculadora-imc/)
 
 Creditos: 
 
